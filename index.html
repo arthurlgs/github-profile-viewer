@@ -20,16 +20,19 @@
 
         <section class="container">
             <header>
-                <h2>Buscar Usuário</h2>
-                <p class="search-hint">Digite o nome de usuário do GitHub e tenha acesso aos dados do perfil</p>
+                <h2>Search User</h2>
+                <p class="search-hint">Look up any GitHub username to retrieve profile information and public repositories.</p>
                 <input type="text" id="input-search" placeholder="Digite o nome do usuário no GitHub">
                 
                 <input type="button" value="Buscar" id="btn-search">
             </header>
 
+            <div class="loading" id="loading" style="display: none;">Carregando...</div>
             <div class="profile-results"></div>
         </section>
     </main>
+
+    <script src="src/js/app.js"></script>
 </body>
 
 </html>
